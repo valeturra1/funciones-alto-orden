@@ -15,6 +15,7 @@ package object Comparador {
       val (tailList, newComp) = insert(e, l.tail, comp)
       (l.head :: tailList, newComp + 1)
     }
+
   }
 
   def insertionSort[T](comp: Comparador[T]): AlgoritmoOrd[T] = {
@@ -31,8 +32,8 @@ package object Comparador {
         (result, numCompAux + compInsert)
       }
     }
-
     insertionSortAux
+
   }
 
   def menoresQueNoMenoresQue[T](l: List[T], v: T, comp: Comparador[T]): (List[T], List[T], Int) = {
@@ -50,8 +51,8 @@ package object Comparador {
         particionAux(faltantes.tail, menores, noMenores ++ List(faltantes.head), count + 1)
       }
     }
-
     particionAux(l, Nil, Nil, 0)
+
   }
 
   def quickSort[T](comp: Comparador[T]): AlgoritmoOrd[T] = {
@@ -76,8 +77,8 @@ package object Comparador {
         (result, compTotal)
       }
     }
-
     quickSortAux
+
   }
 
   def comparar[T](a1: AlgoritmoOrd[T], a2: AlgoritmoOrd[T], l: List[T]): (Int, Int) = {
