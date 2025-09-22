@@ -36,7 +36,7 @@ package object Comparador {
 
   }
 
-  def menoresQueNoMenoresQue[T](l: List[T], v: T, comp: Comparador[T]): (List[T], List[T], Int) = {
+  def menoresQue_noMenoresQue[T](l: List[T], v: T, comp: Comparador[T]): (List[T], List[T], Int) = {
     // Recibe la una lista de elementos de tipo T y un valor v de tipo T
     // devuelve la lista de elementos de l que son menores que v,
     // la lista de los que no son menores que v
@@ -66,7 +66,7 @@ package object Comparador {
       } else {
         val head = l.head
 
-        val (menores, noMenores, compParticion) = menoresQueNoMenoresQue(l.tail, head, comp)
+        val (menores, noMenores, compParticion) = menoresQue_noMenoresQue(l.tail, head, comp)
 
         val (ordenadoMenores, compMenores) = quickSortAux(menores)
         val (ordenadoNoMenores, compNoMenores) = quickSortAux(noMenores)
