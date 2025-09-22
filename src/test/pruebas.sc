@@ -7,7 +7,7 @@ def listaAlAzar(long: Int): List[Int] = {
   // Crea una lista de long enteros,
   // con valores aleatorios entre 1 y long*2
   val v = Vector.fill(long) {
-    random.nextInt(long * 2) + 1
+    random.nextInt(long * 2)+1
   }
   v.toList
 }
@@ -15,55 +15,55 @@ def listaAlAzar(long: Int): List[Int] = {
 def menorQue(a: Int, b: Int): Boolean = a < b
 def mayorQue(a: Int, b: Int): Boolean = a > b
 
-val iSortAsc = insertionSort[Int](menorQue)
-val iSortDesc = insertionSort[Int](mayorQue)
+val iSort_Asc = insertionSort[Int](menorQue)
+val iSort_Desc = insertionSort[Int](mayorQue)
 
-iSortAsc(List(4, 5, 6, 1, 2, 3))
+iSort_Asc(List(4, 5, 6, 1, 2, 3))
 
-val qSortAsc = quickSort[Int](menorQue)
-val qSortDesc = quickSort[Int](mayorQue)
+val qSort_Asc = quickSort[Int](menorQue)
+val qSort_Desc = quickSort[Int](mayorQue)
 
-qSortAsc(List(4, 5, 6, 1, 2, 3))
+qSort_Asc(List(4, 5, 6, 1, 2, 3))
 
-comparar(iSortAsc, qSortAsc, List(4, 5, 6, 1, 2, 3))
-comparar(iSortAsc, qSortDesc, List(4, 5, 6, 1, 2, 3))
+comparar(iSort_Asc, qSort_Asc, List(4, 5, 6, 1, 2, 3))
+comparar(iSort_Asc, qSort_Desc, List(4, 5, 6, 1, 2, 3))
 
 val lAsc100 = (1 to 100).toList
 val lAsc1000 = (1 to 1000).toList
 val lDsc100 = (100 to 1 by -1).toList
 val lDsc1000 = (1000 to 1 by -1).toList
 
-comparar(iSortAsc, qSortAsc, lAsc100)
-comparar(iSortAsc, qSortAsc, lAsc1000)
-comparar(iSortAsc, qSortAsc, lDsc100)
-comparar(iSortAsc, qSortAsc, lDsc1000)
+comparar(iSort_Asc, qSort_Asc, lAsc100)
+comparar(iSort_Asc, qSort_Asc, lAsc1000)
+comparar(iSort_Asc, qSort_Asc, lDsc100)
+comparar(iSort_Asc, qSort_Asc, lDsc1000)
 
 val l5 = listaAlAzar(5)
 val l10 = listaAlAzar(10)
 val l20 = listaAlAzar(20)
 val l50 = listaAlAzar(50)
 
-iSortAsc(l5)
-iSortAsc(l10)
-iSortAsc(l20)
-iSortAsc(l50)
+iSort_Asc(l5)
+iSort_Asc(l10)
+iSort_Asc(l20)
+iSort_Asc(l50)
 
-iSortDesc(l5)
-iSortDesc(l10)
-iSortDesc(l20)
-iSortDesc(l50)
+iSort_Desc(l5)
+iSort_Desc(l10)
+iSort_Desc(l20)
+iSort_Desc(l50)
 
-qSortAsc(l5)
-qSortAsc(l10)
-qSortAsc(l20)
-qSortAsc(l50)
+qSort_Asc(l5)
+qSort_Asc(l10)
+qSort_Asc(l20)
+qSort_Asc(l50)
 
-qSortDesc(l5)
-qSortDesc(l10)
-qSortDesc(l20)
-qSortDesc(l50)
+qSort_Desc(l5)
+qSort_Desc(l10)
+qSort_Desc(l20)
+qSort_Desc(l50)
 
-comparar(iSortAsc, qSortAsc, l5)
-comparar(iSortAsc, qSortAsc, l10)
-comparar(iSortAsc, qSortAsc, l20)
-comparar(iSortAsc, qSortAsc, l50)
+comparar(iSort_Asc, qSort_Asc, l5)
+comparar(iSort_Asc, qSort_Asc, l10)
+comparar(iSort_Asc, qSort_Asc, l20)
+comparar(iSort_Asc, qSort_Asc, l50)
