@@ -18,13 +18,52 @@ def mayorQue(a: Int, b: Int): Boolean = a > b
 val iSort_Asc = insertionSort[Int](menorQue)
 val iSort_Desc = insertionSort[Int](mayorQue)
 
-iSort_Asc(List(4, 5, 6, 1, 2, 3))
-
 val qSort_Asc = quickSort[Int](menorQue)
 val qSort_Desc = quickSort[Int](mayorQue)
 
-qSort_Asc(List(4, 5, 6, 1, 2, 3))
 
+// InsertionSort Ascendente
+println("InsertionSort Ascendente")
+println(iSort_Asc(List(3, 1, 2)))
+println(iSort_Asc(List(5, 4, 3, 2, 1)))
+println(iSort_Asc(List(1, 2, 3, 4)))
+println(iSort_Asc(List(7)))
+println(iSort_Asc(List()))
+
+// InsertionSort Descendente
+println("InsertionSort Descendente")
+println(iSort_Desc(List(3, 1, 2)))
+println(iSort_Desc(List(1, 2, 3, 4, 5)))
+println(iSort_Desc(List(5, 5, 5)))
+println(iSort_Desc(List(10)))
+println(iSort_Desc(List()))
+
+// QuickSort Ascendente
+println("QuickSort Ascendente")
+println(qSort_Asc(List(3, 1, 2)))
+println(qSort_Asc(List(9, 7, 5, 3, 1)))
+println(qSort_Asc(List(2, 4, 6, 8)))
+println(qSort_Asc(List(42)))
+println(qSort_Asc(List()))
+
+// QuickSort Descendente
+println("QuickSort Descendente")
+println(qSort_Desc(List(3, 1, 2)))
+println(qSort_Desc(List(1, 2, 3, 4, 5)))
+println(qSort_Desc(List(4, 4, 2, 2)))
+println(qSort_Desc(List(99)))
+println(qSort_Desc(List()))
+
+// Comparar algoritmos
+println("Comparación de algoritmos")
+comparar(iSort_Asc, qSort_Asc, List(4, 5, 6, 1, 2, 3))
+comparar(iSort_Asc, qSort_Asc, List(10, 9, 8, 7))
+comparar(iSort_Asc, qSort_Asc, List(1,1,1,1))
+comparar(iSort_Asc, qSort_Asc, List())
+comparar(iSort_Asc, qSort_Asc, List(100, 50, 200, 150))
+
+iSort_Asc(List(4, 5, 6, 1, 2, 3))
+qSort_Asc(List(4, 5, 6, 1, 2, 3))
 comparar(iSort_Asc, qSort_Asc, List(4, 5, 6, 1, 2, 3))
 comparar(iSort_Asc, qSort_Desc, List(4, 5, 6, 1, 2, 3))
 
