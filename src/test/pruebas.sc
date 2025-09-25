@@ -21,6 +21,12 @@ val iSort_Desc = insertionSort[Int](mayorQue)
 val qSort_Asc = quickSort[Int](menorQue)
 val qSort_Desc = quickSort[Int](mayorQue)
 
+// Insert
+insert(5, Nil, menorQue)
+insert(1, List(3, 4, 5), menorQue)
+insert(6, List(2, 3, 5), menorQue)
+insert(4, List(2, 3, 5, 6), menorQue)
+insert(3, List(2, 3, 4), menorQue)
 
 // InsertionSort Ascendente
 println("InsertionSort Ascendente")
