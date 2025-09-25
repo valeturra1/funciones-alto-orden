@@ -50,12 +50,11 @@ qSort_Asc(List(42))
 qSort_Asc(List())
 
 // QuickSort Descendente
-println("QuickSort Descendente")
-println(qSort_Desc(List(3, 1, 2)))
-println(qSort_Desc(List(1, 2, 3, 4, 5)))
-println(qSort_Desc(List(4, 4, 2, 2)))
-println(qSort_Desc(List(99)))
-println(qSort_Desc(List()))
+qSort_Desc(List(3, 1, 2))
+qSort_Desc(List(1, 2, 3, 4, 5))
+qSort_Desc(List(4, 4, 2, 2))
+qSort_Desc(List(99))
+qSort_Desc(List())
 
 // Comparar algoritmos
 println("Comparación de algoritmos")
