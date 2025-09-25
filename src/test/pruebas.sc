@@ -36,12 +36,11 @@ iSort_Asc(List(7))
 iSort_Asc(List())
 
 // InsertionSort Descendente
-println("InsertionSort Descendente")
-println(iSort_Desc(List(3, 1, 2)))
-println(iSort_Desc(List(1, 2, 3, 4, 5)))
-println(iSort_Desc(List(5, 5, 5)))
-println(iSort_Desc(List(10)))
-println(iSort_Desc(List()))
+iSort_Desc(List(3, 1, 2))
+iSort_Desc(List(1, 2, 3, 4, 5))
+iSort_Desc(List(5, 5, 5))
+iSort_Desc(List(10))
+iSort_Desc(List())
 
 // QuickSort Ascendente
 println("QuickSort Ascendente")
