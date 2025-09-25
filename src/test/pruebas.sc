@@ -29,12 +29,11 @@ insert(4, List(2, 3, 5, 6), menorQue)
 insert(3, List(2, 3, 4), menorQue)
 
 // InsertionSort Ascendente
-println("InsertionSort Ascendente")
-println(iSort_Asc(List(3, 1, 2)))
-println(iSort_Asc(List(5, 4, 3, 2, 1)))
-println(iSort_Asc(List(1, 2, 3, 4)))
-println(iSort_Asc(List(7)))
-println(iSort_Asc(List()))
+iSort_Asc(List(3, 1, 2))
+iSort_Asc(List(5, 4, 3, 2, 1))
+iSort_Asc(List(1, 2, 3, 4))
+iSort_Asc(List(7))
+iSort_Asc(List())
 
 // InsertionSort Descendente
 println("InsertionSort Descendente")
