@@ -43,12 +43,11 @@ iSort_Desc(List(10))
 iSort_Desc(List())
 
 // QuickSort Ascendente
-println("QuickSort Ascendente")
-println(qSort_Asc(List(3, 1, 2)))
-println(qSort_Asc(List(9, 7, 5, 3, 1)))
-println(qSort_Asc(List(2, 4, 6, 8)))
-println(qSort_Asc(List(42)))
-println(qSort_Asc(List()))
+qSort_Asc(List(3, 1, 2))
+qSort_Asc(List(9, 7, 5, 3, 1))
+qSort_Asc(List(2, 4, 6, 8))
+qSort_Asc(List(42))
+qSort_Asc(List())
 
 // QuickSort Descendente
 println("QuickSort Descendente")
